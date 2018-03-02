@@ -1,36 +1,21 @@
 <template>
 	<div class="indexPage">
-		<v-chooser :selections="fruitList"></v-chooser>
+		<v-pagenation :total="10" :pageSize="3"></v-pagenation>
 	</div>
 
 </template>
 
 <script>
-import VChooser from '../components/base/chooser/chooser'	
+import VPagenation from '../components/base/pagenation'	
 export default {
 	components:{
-		VChooser
+		VPagenation
 	},
 	data(){
       return {
-      	fruitList:[{
-      		label:'苹果',
-      		value:0
-      	},
-      	{
-      		label:'香蕉',
-      		value:1
-      	},
-      	{
-      		label:'西瓜',
-      		value:2
-      	},
-      	]
-      }
-	},
-	methods:{
-
-	},
+        
+	}
+},
 	mounted(){
 
 	}
